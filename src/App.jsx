@@ -1,13 +1,13 @@
-import { createRoot } from "react-dom";
-import Pet from "./Pet";
+import { createRoot } from "react-dom/client";
+import SearchParams from "./SearchParams";
 
 const App = () => {
-    <div>
-        <h1>Adopt me!</h1>
-        <Pet name={"Luna"} animal={"Dog"} breed={"Havanese"} />
-        <Pet name={"Pepper"} animal={"Bird"} breed={"Cockatiel"} />
-        <Pet name={"Doink"} animal={"Cat"} breed={"Mixed"} />
-    </div>;
+    return (
+        <div>
+            <h1>Adopt me!</h1>
+            <SearchParams />
+        </div>
+    );
 };
 
 // Render to the root which is outputted to the DOM by ReactDOM
